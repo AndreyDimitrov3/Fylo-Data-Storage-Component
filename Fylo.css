@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("images/desktop.png");
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-color: hsl(229, 57%, 11%);
+    margin: 0;
+    height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    padding: 0 30px;
+    max-width: 100%;
+}
+
+@media (max-width: 980px) {
+    .wrapper {
+        flex-direction: column;
+    }
+}
+
+.main{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.fyloicons{
+    background-color: #1d2c67;
+    border-radius: 10px 100px 10px 10px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+}
+
+.fylo-image{
+    margin-bottom: 24px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    padding-right: 48px;
+}
+
+.icon-background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c122c;
+    height: 53px;
+    width: 53px;
+    padding: 17px;
+    border-radius: 12px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.usage-text-background{
+    position: relative;
+    background-color: #1d2c67;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: "Raleway";
+    padding: 32px;
+    width: 500px;
+    max-width: 100%;
+    align-self: flex-end;
+}
+
+.usage{
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: #dddbff;
+}
+
+.gb{
+    font-weight: 700;
+}
+
+.background-progress{
+    background: #0c122c;
+    padding: 0.25rem;
+    border-radius: 12px;
+    margin-bottom: 0.75rem;
+    color: #dddbff;
+}
+
+.progress-bar{
+    position: relative;
+    background: linear-gradient(to right, #ffa399, #ff4d97);
+    border-radius: 12px;
+    height: 10px;
+    width: 81.5%;
+}
+
+.progress-bar-dot{
+    position: absolute;
+    background-color: white;
+    width: 10px;
+    height: 70%;
+    top: 50%;
+    right: 0;
+    border-radius: 100px;
+    -webkit-transform: translate(-20%, -50%);
+    transform: translate(-20%, -50%);
+}
+
+.space-left{
+    margin-top: 0px;
+    margin-bottom: 12px;
+    color: #dddbff;
+    font-weight: 700;
+}
+
+.space-0 {
+    float: left;
+}
+
+.space-left-1000{
+    float: right;
+}
+
+.top-space{
+    position: absolute;
+    right: 32px;
+    top: -55px;
+    width: 166px;
+    background-color: white;
+    border-radius: 7px 7px 0 7px;
+    color: black;
+    font-family: "Raleway";
+    padding: 12px 16px;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.gb-left{
+    color: #848794;
+    font-size: 14px;
+}
+
+.triangle-element {
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    position: absolute;
+    margin: 10px;
+    bottom: -30px;
+    right: -10px;
+}
+.triangle-element:after {
+    content: '';
+    background: white;
+    width: 142%;
+    height: 142%;
+    position: absolute;
+    transform: rotate(135deg) translate(-71%,0);
+}
+
+.space-185 {
+    margin-right: 16px;
+}
+
+@media (max-width: 915px){
+
+    body{
+        background-image: url("images/bg-mobile.png");
+        background-size: cover;
+    }
+
+    .fyloicons{
+        box-sizing: border-box;
+        width: 500px;
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .usage-text-background{
+        box-sizing: border-box;
+    }
+
+    .top-space{
+        margin-left: 0;
+        bottom: -27.5%;
+        top: auto;
+        left: 50%; 
+        transform: translateX(-50%);
+    }
+
+    .usage{
+        text-align: center;
+    }
+
+    .triangle-element{
+        display: none;
+    }
+}
